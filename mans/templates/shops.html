@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Магазины
+{% endblock %}
+
+{% block body %}
+    <h1>Магазины</h1>
+                {% for shop in shops %}
+                    <option value="{{ shop.id }}">{{ shop.name }}</option>
+                {% endfor %}
+            
+{% endblock %}
